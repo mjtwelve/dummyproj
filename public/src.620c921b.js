@@ -10003,7 +10003,7 @@ function getOuterHTML(el) {
 Vue.compile = compileToFunctions;
 
 exports.default = Vue;
-},{}],10:[function(require,module,exports) {
+},{}],9:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -12456,7 +12456,7 @@ if (inBrowser && window.Vue) {
 }
 
 exports.default = VueRouter;
-},{}],13:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -13414,7 +13414,7 @@ exports.mapGetters = mapGetters;
 exports.mapActions = mapActions;
 exports.createNamespacedHelpers = createNamespacedHelpers;
 exports.default = index_esm;
-},{}],9:[function(require,module,exports) {
+},{}],13:[function(require,module,exports) {
 var define;
 var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -34122,7 +34122,7 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
     );
 });
 //# sourceMappingURL=vuetify.js.map
-},{"vue":8}],48:[function(require,module,exports) {
+},{"vue":8}],40:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -34152,7 +34152,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],37:[function(require,module,exports) {
+},{}],33:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -34183,18 +34183,18 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":48}],11:[function(require,module,exports) {
+},{"./bundle-url":40}],11:[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":37}],12:[function(require,module,exports) {
+},{"_css_loader":33}],14:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./fonts\\MaterialIcons-Regular.eot":[["MaterialIcons-Regular.97bfb0f0.eot",29],29],"./fonts\\MaterialIcons-Regular.woff2":[["MaterialIcons-Regular.4247c3c0.woff2",30],30],"./fonts\\MaterialIcons-Regular.woff":[["MaterialIcons-Regular.130eebfa.woff",31],31],"./fonts\\MaterialIcons-Regular.ttf":[["MaterialIcons-Regular.6706b985.ttf",32],32],"_css_loader":37}],44:[function(require,module,exports) {
+},{"./fonts\\MaterialIcons-Regular.eot":[["MaterialIcons-Regular.97bfb0f0.eot",29],29],"./fonts\\MaterialIcons-Regular.woff2":[["MaterialIcons-Regular.4247c3c0.woff2",30],30],"./fonts\\MaterialIcons-Regular.woff":[["MaterialIcons-Regular.130eebfa.woff",31],31],"./fonts\\MaterialIcons-Regular.ttf":[["MaterialIcons-Regular.6706b985.ttf",32],32],"_css_loader":33}],35:[function(require,module,exports) {
 var global = arguments[3];
 
 /**
@@ -36161,7 +36161,7 @@ function stubFalse() {
 
 module.exports = merge;
 
-},{}],43:[function(require,module,exports) {
+},{}],34:[function(require,module,exports) {
 /*!
 Copyright (C) 2013-2017 by Andrea Giammarchi - @WebReflection
 
@@ -36370,7 +36370,7 @@ var CircularJSON = {
 
 module.exports = CircularJSON;
 
-},{}],14:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -36632,7 +36632,7 @@ exports.MockStorage = MockStorage;
 exports.default = VuexPersistence;
 //# sourceMappingURL=index.js.map
 
-},{"lodash.merge":44,"circular-json":43}],49:[function(require,module,exports) {
+},{"lodash.merge":35,"circular-json":34}],39:[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = (window.__VUE_HOT_MAP__ = Object.create(null))
@@ -36967,7 +36967,7 @@ render._withStripped = true
       
       }
     })();
-},{"vuex":13,"_css_loader":37,"vue-hot-reload-api":49,"vue":8}],4:[function(require,module,exports) {
+},{"vuex":10,"_css_loader":33,"vue-hot-reload-api":39,"vue":8}],2:[function(require,module,exports) {
 "use strict";
 
 var _vue = require("vue");
@@ -37058,7 +37058,7 @@ var app = new _vue2.default({
 });
 app.$mount("#app");
 console.log("hello world");
-},{"vue":8,"vue-router":10,"vuex":13,"vuetify":9,"vuetify/dist/vuetify.min.css":11,"material-design-icons-iconfont/dist/material-design-icons.css":12,"vuex-persist":14,"./hello.vue":6}],50:[function(require,module,exports) {
+},{"vue":8,"vue-router":9,"vuex":10,"vuetify":13,"vuetify/dist/vuetify.min.css":11,"material-design-icons-iconfont/dist/material-design-icons.css":14,"vuex-persist":12,"./hello.vue":6}],21:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -37085,9 +37085,9 @@ module.bundle.Module = Module;
 
 var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = undefined || location.hostname;
+  var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59120' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58904' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -37228,5 +37228,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[50,4], null)
-//# sourceMappingURL=dummyproj/src.620c921b.map
+},{}]},{},[21,2], null)
+//# sourceMappingURL=/src.620c921b.map
