@@ -1,7 +1,10 @@
 <html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  </head>
 <body>
       <v-app id="app">
-          <v-navigation-drawer app v-model="drawer">
+          <v-navigation-drawer fixed app v-model="drawer">
               <v-list dense>
                   <v-list-tile @click="">
                     <v-list-tile-action>
@@ -45,13 +48,16 @@
         </v-app>
   <script src="./index.js"></script>
   <script>
-    // Check that service workers are registered
-    if ('serviceWorker' in navigator) {
-      // Use the window load event to keep the page load performant
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js');
-      });
+    if(process.env.NODE_ENV === "production"){
+      // Check that service workers are registered
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js');
+        });
+      }
     }
+    
     </script>
 </body>
 </html>

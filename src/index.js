@@ -47,7 +47,7 @@ const store = new Vuex.Store({
 const routes = [{ path: "/", component: hello }];
 const router = new VueRouter({
   mode: "history",
-  base: "/dummyproj/", //'GITHUB_PROJECT_NAME/'
+  base: "/dummyproj/", //(process.env.NODE_ENV !== "production") ? "./" :"/dummyproj/", //'GITHUB_PROJECT_NAME/'
   routes // `routes: routes` の短縮表記
 });
 const app = new Vue({
@@ -65,4 +65,4 @@ const app = new Vue({
   }
 });
 app.$mount("#app");
-console.log("hello world");
+
