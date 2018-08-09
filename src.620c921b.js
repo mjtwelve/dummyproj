@@ -37039,7 +37039,7 @@ var store = new _vuex2.default.Store({
 var routes = [{ path: "/", component: _hello2.default }];
 var router = new _vueRouter2.default({
   mode: "history",
-  base: "/dummyproj/", //'GITHUB_PROJECT_NAME/'
+  base: "development" !== "production" ? "/" : "/dummyproj/", //'GITHUB_PROJECT_NAME/'
   routes: routes // `routes: routes` の短縮表記
 });
 var app = new _vue2.default({
@@ -37087,7 +37087,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60823' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50895' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
