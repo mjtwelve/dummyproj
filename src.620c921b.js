@@ -36967,7 +36967,7 @@ render._withStripped = true
       
       }
     })();
-},{"vuex":10,"_css_loader":33,"vue-hot-reload-api":39,"vue":8}],4:[function(require,module,exports) {
+},{"vuex":10,"_css_loader":33,"vue-hot-reload-api":39,"vue":8}],2:[function(require,module,exports) {
 "use strict";
 
 var _vue = require("vue");
@@ -37039,7 +37039,7 @@ var store = new _vuex2.default.Store({
 var routes = [{ path: "/", component: _hello2.default }];
 var router = new _vueRouter2.default({
   mode: "history",
-  base: "/", //'GITHUB_PROJECT_NAME/'
+  base: "/dummyproj/", //'GITHUB_PROJECT_NAME/'
   routes: routes // `routes: routes` の短縮表記
 });
 var app = new _vue2.default({
@@ -37058,7 +37058,7 @@ var app = new _vue2.default({
 });
 app.$mount("#app");
 console.log("hello world");
-},{"vue":8,"vue-router":9,"vuex":10,"vuetify":13,"vuetify/dist/vuetify.min.css":11,"material-design-icons-iconfont/dist/material-design-icons.css":14,"vuex-persist":12,"./hello.vue":6}],41:[function(require,module,exports) {
+},{"vue":8,"vue-router":9,"vuex":10,"vuetify":13,"vuetify/dist/vuetify.min.css":11,"material-design-icons-iconfont/dist/material-design-icons.css":14,"vuex-persist":12,"./hello.vue":6}],21:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -37085,9 +37085,9 @@ module.bundle.Module = Module;
 
 var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = undefined || location.hostname;
+  var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52738' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58904' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -37228,5 +37228,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[41,4], null)
+},{}]},{},[21,2], null)
 //# sourceMappingURL=/src.620c921b.map
