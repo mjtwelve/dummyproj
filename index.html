@@ -1,7 +1,7 @@
 <html>
   <head>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="/src.620c921b.css"></head>
+  <link rel="stylesheet" href="/dummyproj/src.620c921b.css"></head>
 <body>
       <v-app id="app">
           <v-navigation-drawer fixed="" app="" v-model="drawer">
@@ -46,15 +46,18 @@
               <span>&copy; 2018</span>
           </v-footer>
         </v-app>
-  <script src="/src.620c921b.js"></script>
+  <script src="/dummyproj/src.620c921b.js"></script>
   <script>
-    // Check that service workers are registered
-    if ('serviceWorker' in navigator) {
-      // Use the window load event to keep the page load performant
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js');
-      });
+    if(process.env.NODE_ENV === "production"){
+      // Check that service workers are registered
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js');
+        });
+      }
     }
+    
     </script>
 </body>
 </html>

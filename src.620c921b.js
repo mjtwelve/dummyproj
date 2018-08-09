@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({7:[function(require,module,exports) {
+})({8:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -10003,7 +10003,7 @@ function getOuterHTML(el) {
 Vue.compile = compileToFunctions;
 
 exports.default = Vue;
-},{}],10:[function(require,module,exports) {
+},{}],9:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -12456,7 +12456,7 @@ if (inBrowser && window.Vue) {
 }
 
 exports.default = VueRouter;
-},{}],9:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -13414,7 +13414,7 @@ exports.mapGetters = mapGetters;
 exports.mapActions = mapActions;
 exports.createNamespacedHelpers = createNamespacedHelpers;
 exports.default = index_esm;
-},{}],8:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 var define;
 var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -34122,7 +34122,7 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
     );
 });
 //# sourceMappingURL=vuetify.js.map
-},{"vue":7}],48:[function(require,module,exports) {
+},{"vue":8}],48:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -34152,7 +34152,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],33:[function(require,module,exports) {
+},{}],37:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -34183,18 +34183,18 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":48}],12:[function(require,module,exports) {
+},{"./bundle-url":48}],11:[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":33}],11:[function(require,module,exports) {
+},{"_css_loader":37}],13:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./fonts\\MaterialIcons-Regular.eot":[["MaterialIcons-Regular.97bfb0f0.eot",29],29],"./fonts\\MaterialIcons-Regular.woff2":[["MaterialIcons-Regular.4247c3c0.woff2",30],30],"./fonts\\MaterialIcons-Regular.woff":[["MaterialIcons-Regular.130eebfa.woff",31],31],"./fonts\\MaterialIcons-Regular.ttf":[["MaterialIcons-Regular.6706b985.ttf",32],32],"_css_loader":33}],44:[function(require,module,exports) {
+},{"./fonts\\MaterialIcons-Regular.eot":[["MaterialIcons-Regular.97bfb0f0.eot",29],29],"./fonts\\MaterialIcons-Regular.woff2":[["MaterialIcons-Regular.4247c3c0.woff2",30],30],"./fonts\\MaterialIcons-Regular.woff":[["MaterialIcons-Regular.130eebfa.woff",31],31],"./fonts\\MaterialIcons-Regular.ttf":[["MaterialIcons-Regular.6706b985.ttf",32],32],"_css_loader":37}],44:[function(require,module,exports) {
 var global = arguments[3];
 
 /**
@@ -36370,7 +36370,7 @@ var CircularJSON = {
 
 module.exports = CircularJSON;
 
-},{}],13:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -36967,7 +36967,7 @@ render._withStripped = true
       
       }
     })();
-},{"vuex":9,"_css_loader":33,"vue-hot-reload-api":49,"vue":7}],4:[function(require,module,exports) {
+},{"vuex":10,"_css_loader":37,"vue-hot-reload-api":49,"vue":8}],4:[function(require,module,exports) {
 "use strict";
 
 var _vue = require("vue");
@@ -37057,8 +37057,7 @@ var app = new _vue2.default({
   }
 });
 app.$mount("#app");
-console.log("hello world");
-},{"vue":7,"vue-router":10,"vuex":9,"vuetify":8,"vuetify/dist/vuetify.min.css":12,"material-design-icons-iconfont/dist/material-design-icons.css":11,"vuex-persist":13,"./hello.vue":6}],20:[function(require,module,exports) {
+},{"vue":8,"vue-router":9,"vuex":10,"vuetify":14,"vuetify/dist/vuetify.min.css":11,"material-design-icons-iconfont/dist/material-design-icons.css":13,"vuex-persist":12,"./hello.vue":6}],50:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -37085,9 +37084,9 @@ module.bundle.Module = Module;
 
 var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = '' || location.hostname;
+  var hostname = undefined || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51895' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54624' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -37228,5 +37227,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[20,4], null)
-//# sourceMappingURL=/src.620c921b.map
+},{}]},{},[50,4], null)
+//# sourceMappingURL=/dummyproj/src.620c921b.map
