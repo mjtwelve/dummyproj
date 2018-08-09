@@ -37058,7 +37058,7 @@ var app = new _vue2.default({
 });
 app.$mount("#app");
 console.log("hello world");
-},{"vue":8,"vue-router":9,"vuex":11,"vuetify":10,"vuetify/dist/vuetify.min.css":14,"material-design-icons-iconfont/dist/material-design-icons.css":13,"vuex-persist":12,"./hello.vue":6}],50:[function(require,module,exports) {
+},{"vue":8,"vue-router":9,"vuex":11,"vuetify":10,"vuetify/dist/vuetify.min.css":14,"material-design-icons-iconfont/dist/material-design-icons.css":13,"vuex-persist":12,"./hello.vue":6}],22:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -37085,9 +37085,9 @@ module.bundle.Module = Module;
 
 var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = undefined || location.hostname;
+  var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59678' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60463' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -37228,5 +37228,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[50,4], null)
+},{}]},{},[22,4], null)
 //# sourceMappingURL=src.620c921b.map
