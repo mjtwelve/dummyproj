@@ -1,0 +1,35 @@
+{
+  "name": "dummyproj",
+  "version": "1.0.0",
+  "description": "dummyproj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.htm -d public",
+    "deploy": "gh-pages -d public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "material-design-icons-iconfont": "^3.0.3",
+    "vue": "^2.5.16",
+    "vue-hot-reload-api": "^2.3.0",
+    "vue-router": "^3.0.1",
+    "vuetify": "^1.1.8",
+    "vuex": "^3.0.1",
+    "vuex-persist": "^1.4.3"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.1.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "gh-pages": "^1.2.0",
+    "prettier": "^1.14.0",
+    "typescript": "^3.0.1",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.esm.js"
+  }
+}
